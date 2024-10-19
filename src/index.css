@@ -1,0 +1,33 @@
+@font-face {
+  font-family: NeueMachina;
+  src: url(/public/3856NeueMachina.woff2);
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.poppins {
+  font-family: "Poppins", sans-serif;
+}
+
+
+.canvas{
+  height: 100vh !important;
+}
