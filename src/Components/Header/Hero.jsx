@@ -1,8 +1,6 @@
 import React from "react";
 import Btn from "../Btn";
-import { Canvas } from "@react-three/fiber";
-import { OrbitControls } from "@react-three/drei";
-import Earth from '../Earth'
+import globeImg from '../../../public/map.png'
 
 const Hero = () => {
   return (
@@ -20,11 +18,8 @@ const Hero = () => {
         />
       </div>
       <div className="sm:w-[50%] lg:w-[50%] xl:w-[40%] flex items-center justify-center hero-right h-[400px] sm:h-[500px] lg:h-[600px]"> {/* Adjusted height */}
-        <Canvas camera={{ position: [2, 2, 8], fov: 50 }}> {/* Adjusted camera position for better zoom out */}
-          <OrbitControls />
-          <ambientLight intensity={0.5} />
-          <Earth scale={[2, 2, 2]} /> {/* Increased the scale of the globe */}
-        </Canvas>
+        
+        <img src={globeImg } alt="" />
       </div>
     </div>
   );
